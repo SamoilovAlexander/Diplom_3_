@@ -39,7 +39,7 @@ class BasePage:
 
     @allure.step('Скролл до заданного элемента')
     def scroll_to_element(self, locator):
-        element = self.driver.find_element(*locator)
+        element = self.find_element_with_wait(locator)
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
 
     @allure.step('Получение адреса URL текущей страницы')

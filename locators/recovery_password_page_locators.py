@@ -5,7 +5,7 @@ class RecoveryPasswordPageLocators:
 
 
     # локатор на поле ввода электронной почты окна восстановления пароля
-    INPUT_EMAIL_FOR_RECOVERY_FLD = By.XPATH, ".//fieldset/div/div/input"
+    INPUT_EMAIL_FOR_RECOVERY_FLD = By.XPATH, "//input[contains(@class, 'text input__textfield text_type_main-default')]"
 
     # локатор кнопки "Восстановить" окна восставновления пароля
     RECOVER_BTN = By.XPATH, ".//button[text()='Восстановить']"

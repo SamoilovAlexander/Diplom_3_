@@ -33,7 +33,6 @@ class TestMainPageFunctions:
                   'только в этот раз со скроллом')
     def test_click_on_ingredient_2(self, login_user):
         main_page = MainPage(login_user)
-        time.sleep(2)
         main_page.scroll_to_beef_chop()
         main_page.click_on_beef_chop()
         assert main_page.check_title_of_popup() == 'Детали ингредиента'

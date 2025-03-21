@@ -17,4 +17,4 @@ class PersonalAccountPageLocators:
     LOGOUT_BTN = By.XPATH, "//button[text()='Выход']"
 
     # локатор последнего заказа
-    LAST_ORDER = By.XPATH, "//li[last()]/a/div[1]/p[1]" #"//div[contains(@class, 'OrderHistory_textBox')]/p[contains(@class, 'text_type_digits-default')])[1]"  #
+    LAST_ORDER = By.XPATH, "//li[last()]/a/div[1]/p[1]"
